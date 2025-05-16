@@ -1,0 +1,39 @@
+﻿@page
+@model Project.Presentation.Pages.Account.LoginModel
+@{
+	ViewData["Title"] = "Login";
+}
+
+<div class="container">
+
+<div class="input-group">
+	<form method="post">
+		<div asp-validation-summary="All" class="text-danger"></div>
+
+		<input type="hidden" asp-for="ReturnUrl" />
+
+
+		<div class="form-group row">
+			<label asp-for="UserName" class="col-sm-2 col-form-label text-right">نام کاربری:</label>
+			<input class="form-control" type="text" asp-for="UserName">
+		</div>
+
+		<br />
+
+		<div class="form-group row">
+			<label asp-for="Password" class="col-sm-2 col-form-label text-right">رمز عبور:</label>
+			<input class="form-control" type="password" asp-for="Password">
+		</div>
+
+		<br />
+		<label asp-for="RememberMe">RememberMe: </label>
+		<input type="checkbox" asp-for="RememberMe" />
+
+		<br />
+		<br />
+		<button type="submit" class="btn btn-success">Login</button>
+	</form>
+
+
+</div>
+</div>

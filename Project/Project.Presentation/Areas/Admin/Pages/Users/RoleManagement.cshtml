@@ -1,0 +1,24 @@
+﻿@page "{id}"
+@model Project.Presentation.Areas.Admin.Pages.Users.RoleManagementModel
+@{
+}
+
+@if (@Model.Roles.Count() < 1){
+	<tr>
+		<td style="font-size:20px" class="text-center">هیچ نقشی وجود ندارد<br /><a asp-page="../Roles/Add" class="btn btn-success">افزودن</a></td>
+	</tr>
+}
+else{
+
+<form method="post">
+@foreach (var item in @Model.Roles)
+{
+	@item.Name <input type="checkbox" checked="@Model.UserRoles.Contains(item.Name)" value="@item.Name" name="SelectedRoles"/>
+	<br />
+
+}
+	<br />
+		<input type="submit" class="btn btn-outline-success" value="بروزرسانی" />  <a asp-page="List" class="btn btn-danger">لغو</a>
+</form>
+}
+

@@ -1,0 +1,322 @@
+[
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.AppointmentsController",
+    "Method": "Add",
+    "RelativePath": "api/Appointments/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.AdminApi.Models.DTOs.Appointments.AppointmentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.AppointmentsController",
+    "Method": "Delete",
+    "RelativePath": "api/Appointments/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.AppointmentsController",
+    "Method": "Get",
+    "RelativePath": "api/Appointments/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagination",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Common.Pagination.Pagination",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.CitizensController",
+    "Method": "Add",
+    "RelativePath": "api/Citizens/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Citizen.CitizenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.CitizensController",
+    "Method": "Delete",
+    "RelativePath": "api/Citizens/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UniqueCode",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.CitizensController",
+    "Method": "Get",
+    "RelativePath": "api/Citizens/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.CitizensController",
+    "Method": "Get",
+    "RelativePath": "api/Citizens/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Common.Pagination.Pagination",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.AdminApi.Controllers.CitizensController",
+    "Method": "Update",
+    "RelativePath": "api/Citizens/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Citizen.UpdateCitizenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "Add",
+    "RelativePath": "api/Offices/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Office.AddOfficeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "Delete",
+    "RelativePath": "api/Offices/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "Get",
+    "RelativePath": "api/Offices/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "Get",
+    "RelativePath": "api/Offices/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Common.Pagination.Pagination",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "AddPlanToOffice",
+    "RelativePath": "api/Offices/OfficeOptions-AddPlanToOffice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.OfficePlans.OfficePlansDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "DeleteOfficePlan",
+    "RelativePath": "api/Offices/OfficeOptions-DeleteOfficePlan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.OfficePlans.OfficePlansDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.OfficesController",
+    "Method": "Update",
+    "RelativePath": "api/Offices/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Office.OfficeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.PlansController",
+    "Method": "Add",
+    "RelativePath": "api/Plans/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Plan.PlanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.PlansController",
+    "Method": "Delete",
+    "RelativePath": "api/Plans/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.PlansController",
+    "Method": "Get",
+    "RelativePath": "api/Plans/Get",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.PlansController",
+    "Method": "Get",
+    "RelativePath": "api/Plans/GetAll",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Common.Pagination.Pagination",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Project.Presentation.Areas.Admin.Controllers.PlansController",
+    "Method": "Update",
+    "RelativePath": "api/Plans/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Project.Presentation.Areas.Admin.Models.DTOs.Plan.PlanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

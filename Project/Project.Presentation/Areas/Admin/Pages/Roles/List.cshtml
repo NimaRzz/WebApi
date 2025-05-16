@@ -1,0 +1,60 @@
+﻿@page 
+@model Project.Presentation.Areas.Admin.Pages.Roles.ListModel
+@{
+    ViewData["Title"] = "List Roles";
+}
+
+<div class="row col-9">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">لیست نقش ها</h4>
+                <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="datatable_info">
+                                <thead>
+                                    <tr role="row"><th tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 184.2px;" aria-sort="ascending">شناسه</th><th tabindex="0" aria-controls="datatable" rowspan="1" colspan="2" style="width: 279.2px;">نام نقش ها</th></tr>
+                                </thead>
+
+
+                                <tbody>
+                                    @if (Model.Roles.Count() < 1)
+                                    {
+                                        <tr>
+                                            <td style="font-size:20px" class="text-center">هیچ نقشی وجود ندارد<br /><a asp-page="Add" class="btn btn-success">افزودن</a></td>
+                                        </tr>
+                                    }
+                                    else
+                                    {
+
+                                        @foreach (var item in Model.Roles)
+                                        {
+                                            <tr>
+
+
+                                                <td>@item.Id</td>
+                                                <td>@item.Name</td>
+
+                                                <td>
+                                                    <form method="post">
+                                                        <input type="hidden" value="@item.Name" name="Name" />
+                                                        <input type="submit" class="btn btn-danger" value="حذف" />
+                                                    </form>
+                                                </td>
+
+
+                                            </tr>
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><div class="row"><div class="col-sm-12 col-md-5"></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate"></div></div></div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
